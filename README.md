@@ -1,2 +1,2 @@
 # frontend-everydays
-all about frontend learning project
+all frontend learning project
