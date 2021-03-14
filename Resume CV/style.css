@@ -284,15 +284,18 @@ img {
 }
 
 /* Education and experience */
-.education__content {
+.education__content,
+.experience__content {
 	display: flex;
 }
 
-.education__time {
+.education__time,
+.experience__time {
 	padding-right: 1rem;
 }
 
-.education__rounder {
+.education__rounder,
+.experience__rounder {
 	position: relative;
 	display: block;
 	width: 16px;
@@ -302,7 +305,8 @@ img {
 	margin-top: 0.25rem;
 }
 
-.education__line {
+.education__line,
+.experience__line {
 	display: block;
 	width: 2px;
 	height: 110%;
@@ -310,15 +314,18 @@ img {
 	transform: translate(7px, 0);
 }
 
-.eduaction__data {
+.eduaction__data,
+.experience__data {
 	gap: 0.5rem;
 }
 
-.education__title {
+.education__title,
+.experience__title {
 	font-size: var(--h3-font-size);
 }
 
-.education__studies {
+.education__studies,
+.experience__company {
 	font-size: var(--small-font-size);
 	color: var(--title-color);
 }
@@ -328,21 +335,24 @@ img {
 }
 
 /* Skills and languages */
-.skills__content {
+.skills__content,
+.languages__content {
 	grid-template-columns: repeat(2, 1fr);
 }
 
-.skills__content {
+.languages__content {
 	gap: 0;
 }
 
-.skills__name {
+.skills__name,
+.languages__name {
 	display: flex;
 	align-items: center;
 	margin-bottom: var(--mb-3);
 }
 
-.skills__circle {
+.skills__circle,
+.languages__circle {
 	display: inline-block;
 	width: 5px;
 	height: 5px;
@@ -352,12 +362,73 @@ img {
 }
 
 /* certificates */
+.certificate__title {
+	font-size: var(--h3-font-size);
+	margin-bottom: var(--mb-1);
+}
 
 /* references */
+.references__content {
+	gap: 0.25rem;
+}
+
+.references__subtitle {
+	color: var(--text-color-light);
+}
+
+.references__subtitle,
+.references__contact {
+	font-size: var(--smaller-font-size);
+}
+
+.references__title {
+	font-size: var(--h3-font-size);
+}
 
 /* interest */
+.interests__container {
+	grid-template-columns: repeat(3, 1fr);
+	margin-top: var(--mb-2);
+}
+
+.interests__content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.interests__icon {
+	font-size: 1.5rem;
+	color: var(--text-color-light);
+	margin-bottom: 0.25rem;
+}
 
 /* Scroll top */
+.scrolltop {
+	position: fixed;
+	right: 1rem;
+	bottom: -20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.3rem;
+	background-color: var(--container-color-alt);
+	border-radius: 0.4rem;
+	z-index: var(--z-tooltip);
+	transition: 0.4s;
+	visibility: hidden;
+}
+
+.scrolltop__icon {
+	font-size: 1.2rem;
+	color: var(--text-color);
+}
+
+/* Show-scroll */
+.show-scroll {
+	visibility: visible;
+	bottom: 5rem;
+}
 
 /* media queries */
 /* For small devices, menu two columns */
