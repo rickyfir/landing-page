@@ -74,11 +74,10 @@
 
 		<main class="l-main bd-container">
 			<!-- All elementa with this div, is generated in PDF -->
-			<div class="resume">
+			<div class="resume" id="area-cv">
 				<div class="resume__left">
 					<!--========== HOME ==========-->
 					<section class="home" id="home">
-						<!-- Theme change button -->
 						<div class="home__container section bd-grid">
 							<div class="home__data bd-grid">
 								<img src="img/perfil.jpg" alt="" class="home__img" />
@@ -86,7 +85,6 @@
 								<h1 class="home__title">Smith <b>Matthew</b></h1>
 								<h3 class="home__profession">Web developer</h3>
 
-								<!-- Button to generate and download the pdf. Available for desktop. -->
 								<div>
 									<a
 										download=""
@@ -110,6 +108,20 @@
 								</span>
 							</div>
 						</div>
+
+						<!-- Theme change button -->
+						<i
+							class="bx bx-moon change-theme"
+							title="Theme"
+							id="theme-button"
+						></i>
+
+						<!-- Button to generate and download the pdf. Available for desktop. -->
+						<i
+							class="bx bx-download generate-pdf"
+							title="Generate PDF"
+							id="resume-button"
+						></i>
 					</section>
 
 					<!--========== SOCIAL ==========-->
@@ -419,6 +431,7 @@
 		</a>
 
 		<!-- HTML2PDF -->
+		<script src="html2pdf.bundle.min.js"></script>
 
 		<!-- main js -->
 		<script src="main.js"></script>
