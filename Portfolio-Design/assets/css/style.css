@@ -419,6 +419,19 @@ body.nav-active {
 	gap: 12px;
 }
 
+/* Footer */
+.footer {
+	padding-block: 40px;
+}
+
+.copyright {
+	margin-block-end: 12px;
+}
+
+.footer .social-link {
+	color: var(--charcoal);
+}
+
 /* -----------------Media Queries----------------- */
 
 /* Responsive for larger than 568px screen */
@@ -441,6 +454,17 @@ body.nav-active {
 	}
 	.section-text {
 		--fs-5: 2rem;
+	}
+
+	/* footer */
+	.footer .container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.copyright {
+		margin-block-end: 0;
 	}
 }
 
@@ -556,4 +580,3 @@ body.nav-active {
 		--fs-5: 2.4rem;
 	}
 }
-
