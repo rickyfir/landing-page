@@ -34,3 +34,26 @@ window.addEventListener('scroll', function () {
 		header.classList.remove('active');
 	}
 });
+
+// Scroll reveal
+const revealElement = document.querySelectorAll('[data-reveal]');
+const revealDelayElement = document.querySelectorAll('[data-reveal-delay]');
+
+const reveal = function () {
+	for (let i = 0, len = revealElement.length; i < len; i++) {
+		if (
+			revealElement[i].getBoundingClientRect().top <
+			window.innerHeight / 1.2
+		) {
+			revealElement[i].classList.add('revealed');
+		}
+	}
+};
+
+for (let i = 0, len = revealDelayElement.length; i < len; i++) {
+	revealDelayElement[i].style.transitionDelay =
+		revealDelayElement[i].dataset.revealDelay;
+}
+
+window.addEventListener('scroll', reveal);
+window.addEventListener('load', reveal);
